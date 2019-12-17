@@ -56,11 +56,12 @@ func Test_flatten(t *testing.T) {
 }
 
 func Test_requestAPI(t *testing.T) {
-	url := "http://localhost:8080/flat?key=[1,2,3,[2]]"
-
+	url := "http://localhost:8181/flat?key=[1,2,3,[2]]"
 	req, _ := http.NewRequest("GET", url, nil)
 	res, _ := http.DefaultClient.Do(req)
+
 	defer res.Body.Close()
+
 	body, _ := ioutil.ReadAll(res.Body)
 
 	fmt.Println(res)

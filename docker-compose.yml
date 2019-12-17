@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "8080:8080"
+      - "8181:8181"
     volumes:
       - .:/go/src/github.com/tangelo_challenge
     command: tail -f /dev/null
