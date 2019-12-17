@@ -7,7 +7,7 @@ $ curl -X GET 'http://localhost:8080/flat?key=\[1,2,3,\[2\]\]'
 ```
 - Postman
 ```Plaintext
-localhost:8080/flat?key=[1,2,3,[2]]
+localhost:8181/flat?key=[1,2,3,[2]]
 ```
 
 - With Makefile commands
